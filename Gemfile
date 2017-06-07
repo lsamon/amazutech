@@ -21,6 +21,12 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Sidekiq for delayed jobs
+gem 'sidekiq'
+gem 'redis'
+gem 'redis-namespace'
+gem 'sinatra', '>= 1.3.0', :require => nil
+
 # Use jquery as the JavaScript library
 gem 'magnific-popup-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
