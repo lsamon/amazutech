@@ -1,0 +1,342 @@
+=== puma startup: 2017-05-29 22:53:18 +1000 ===
+[13362] * Starting control server on unix:///tmp/puma-status-1496062398764-13362
+[13362] - Worker 1 (pid: 13422) booted, phase: 0
+[13362] - Worker 2 (pid: 13425) booted, phase: 0
+[13362] - Worker 3 (pid: 13430) booted, phase: 0
+[13362] - Worker 0 (pid: 13418) booted, phase: 0
+[13362] - Gracefully shutting down workers...
+[13362] === puma shutdown: 2017-05-29 22:54:07 +1000 ===
+[13362] - Goodbye!
+Exiting
+=== puma startup: 2017-05-29 22:54:48 +1000 ===
+[13475] * Starting control server on unix:///tmp/puma-status-1496062488024-13475
+[13475] - Worker 3 (pid: 13535) booted, phase: 0
+[13475] - Worker 2 (pid: 13533) booted, phase: 0
+[13475] - Worker 1 (pid: 13529) booted, phase: 0
+[13475] - Worker 0 (pid: 13525) booted, phase: 0
+[13475] - Gracefully shutting down workers...
+[13475] === puma shutdown: 2017-05-29 22:58:14 +1000 ===
+[13475] - Goodbye!
+Exiting
+=== puma startup: 2017-05-29 23:04:41 +1000 ===
+[13651] * Starting control server on unix:///tmp/puma-status-1496063081314-13651
+[13651] - Worker 2 (pid: 13707) booted, phase: 0
+[13651] - Worker 0 (pid: 13700) booted, phase: 0
+[13651] - Worker 1 (pid: 13704) booted, phase: 0
+[13651] - Worker 3 (pid: 13712) booted, phase: 0
+[13651] - Gracefully shutting down workers...
+[13651] === puma shutdown: 2017-05-29 23:24:14 +1000 ===
+[13651] - Goodbye!
+Exiting
+=== puma startup: 2017-05-29 23:24:23 +1000 ===
+[13851] * Starting control server on unix:///tmp/puma-status-1496064263329-13851
+[13851] - Worker 2 (pid: 13909) booted, phase: 0
+[13851] - Worker 1 (pid: 13905) booted, phase: 0
+[13851] - Worker 3 (pid: 13913) booted, phase: 0
+[13851] - Worker 0 (pid: 13901) booted, phase: 0
+[13851] - Gracefully shutting down workers...
+[13851] === puma shutdown: 2017-05-29 23:43:44 +1000 ===
+[13851] - Goodbye!
+Exiting
+=== puma startup: 2017-05-29 23:44:31 +1000 ===
+[14057] * Starting control server on unix:///tmp/puma-status-1496065471678-14057
+[14057] - Gracefully shutting down workers...
+[22602] Early termination of worker
+[22604] Early termination of worker
+[22598] Early termination of worker
+[22611] Early termination of worker
+[14057] === puma shutdown: 2017-05-29 23:47:55 +1000 ===
+[14057] - Goodbye!
+Exiting
+=== puma startup: 2017-05-29 23:48:38 +1000 ===
+[22618] * Starting control server on unix:///tmp/puma-status-1496065718330-22618
+[22618] - Gracefully shutting down workers...
+[8725] Early termination of worker
+[8728] Early termination of worker
+[8736] Early termination of worker
+[8733] Early termination of worker
+[22618] === puma shutdown: 2017-05-29 23:56:19 +1000 ===
+[22618] - Goodbye!
+Exiting
+=== puma startup: 2017-05-29 23:58:01 +1000 ===
+[8779] * Starting control server on unix:///tmp/puma-status-1496066281978-8779
+[8779] - Worker 2 (pid: 8836) booted, phase: 0
+[8779] - Worker 3 (pid: 8840) booted, phase: 0
+[8779] - Worker 1 (pid: 8832) booted, phase: 0
+[8779] - Worker 0 (pid: 8828) booted, phase: 0
+=== puma startup: 2017-06-01 20:14:50 +1000 ===
+[3795] * Starting control server on unix:///tmp/puma-status-1496312090382-3795
+[3795] - Gracefully shutting down workers...
+[3854] Early termination of worker
+[3862] Early termination of worker
+[3858] Early termination of worker[3850] Early termination of worker
+
+[3795] === puma shutdown: 2017-06-01 20:14:52 +1000 ===
+[3795] - Goodbye!
+Exiting
+=== puma startup: 2017-06-01 20:15:07 +1000 ===
+[3866] * Starting control server on unix:///tmp/puma-status-1496312107513-3866
+[3866] - Worker 2 (pid: 3924) booted, phase: 0
+[3866] - Worker 1 (pid: 3920) booted, phase: 0
+[3866] - Worker 0 (pid: 3916) booted, phase: 0
+[3866] - Worker 3 (pid: 3929) booted, phase: 0
+[3866] - Gracefully shutting down workers...
+[3866] === puma shutdown: 2017-06-01 20:56:45 +1000 ===
+[3866] - Goodbye!
+Exiting
+=== puma startup: 2017-06-01 20:56:53 +1000 ===
+[4225] * Starting control server on unix:///tmp/puma-status-1496314613526-4225
+[4225] - Worker 0 (pid: 4280) booted, phase: 0
+[4225] - Worker 3 (pid: 4292) booted, phase: 0
+[4225] - Worker 1 (pid: 4284) booted, phase: 0
+[4225] - Worker 2 (pid: 4288) booted, phase: 0
+Started GET "/" for ::1 at 2017-06-01 20:57:26 +1000
+
+ActiveRecord::ConnectionTimeoutError - could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use:
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:202:in `block in wait_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:193:in `loop'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:193:in `wait_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:154:in `internal_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:278:in `internal_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:148:in `block in poll'
+  /home/amz/.rbenv/versions/2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:158:in `synchronize'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:148:in `poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:717:in `acquire_connection'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+  activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+  activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+  activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+  activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.2) lib/rails/engine.rb:522:in `call'
+  puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+  puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+  puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+  puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+  puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/bdd825714c1ebbed/variables" for ::1 at 2017-06-01 20:57:31 +1000
+[4225] - Gracefully shutting down workers...
+[4225] === puma shutdown: 2017-06-01 20:59:07 +1000 ===
+[4225] - Goodbye!
+Exiting
+=== puma startup: 2017-06-01 20:59:25 +1000 ===
+[4535] * Starting control server on unix:///tmp/puma-status-1496314765801-4535
+[4535] - Worker 3 (pid: 4600) booted, phase: 0
+[4535] - Worker 2 (pid: 4598) booted, phase: 0
+[4535] - Worker 0 (pid: 4590) booted, phase: 0
+[4535] - Worker 1 (pid: 4594) booted, phase: 0
+Started GET "/" for ::1 at 2017-06-01 20:59:40 +1000
+
+ActiveRecord::ConnectionTimeoutError - could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use:
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:202:in `block in wait_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:193:in `loop'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:193:in `wait_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:154:in `internal_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:278:in `internal_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:148:in `block in poll'
+  /home/amz/.rbenv/versions/2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:158:in `synchronize'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:148:in `poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:717:in `acquire_connection'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+  activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+  activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+  activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+  activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.2) lib/rails/engine.rb:522:in `call'
+  puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+  puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+  puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+  puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+  puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/2c400ee5072a4d78/variables" for ::1 at 2017-06-01 20:59:45 +1000
+[4535] - Gracefully shutting down workers...
+[4535] === puma shutdown: 2017-06-01 21:02:12 +1000 ===
+[4535] - Goodbye!
+Exiting
+=== puma startup: 2017-06-01 21:02:25 +1000 ===
+[4666] * Starting control server on unix:///tmp/puma-status-1496314945309-4666
+[4666] - Worker 0 (pid: 4721) booted, phase: 0
+[4666] - Worker 1 (pid: 4725) booted, phase: 0
+Started GET "/" for ::1 at 2017-06-01 21:02:46 +1000
+
+ActiveRecord::ConnectionTimeoutError - could not obtain a connection from the pool within 5.000 seconds (waited 5.000 seconds); all pooled connections were in use:
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:202:in `block in wait_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:193:in `loop'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:193:in `wait_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:154:in `internal_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:278:in `internal_poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:148:in `block in poll'
+  /home/amz/.rbenv/versions/2.3.3/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:158:in `synchronize'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:148:in `poll'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:717:in `acquire_connection'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+  activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+  activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+  activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+  activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+  activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+  activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+  activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+  activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+  actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+  web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+  web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+  railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+  railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+  activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+  activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+  railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+  sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+  rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+  rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+  activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+  actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+  rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+  railties (5.0.2) lib/rails/engine.rb:522:in `call'
+  puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+  puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+  puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+  puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+  puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+
+Started POST "/__better_errors/fbc4a1181ff7ac9a/variables" for ::1 at 2017-06-01 21:02:51 +1000
+[4666] - Gracefully shutting down workers...
+[4666] === puma shutdown: 2017-06-01 21:06:46 +1000 ===
+[4666] - Goodbye!
+Exiting
+=== puma startup: 2017-06-01 21:06:53 +1000 ===
+[4783] * Starting control server on unix:///tmp/puma-status-1496315213752-4783
+[4783] - Worker 1 (pid: 4842) booted, phase: 0
+[4783] - Worker 0 (pid: 4838) booted, phase: 0
+Started GET "/" for ::1 at 2017-06-01 21:07:10 +1000
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/_header.html.erb (1.6ms)
+  Rendered pages/_about.html.erb (1.2ms)
+  Rendered pages/_services.html.erb (1.4ms)
+  Rendered pages/_contact.html.erb (1.7ms)
+  Rendered pages/_footer.html.erb (1.1ms)
+  Rendered pages/index.html.erb within layouts/application (44.9ms)
+Completed 200 OK in 1491ms (Views: 1442.1ms | ActiveRecord: 0.0ms)
+
+
+[4783] - Gracefully shutting down workers...
+[4783] === puma shutdown: 2017-06-01 21:07:35 +1000 ===
+[4783] - Goodbye!
+Exiting
+=== puma startup: 2017-06-01 21:07:53 +1000 ===
+[4895] * Starting control server on unix:///tmp/puma-status-1496315273152-4895
+[4895] - Worker 1 (pid: 4949) booted, phase: 0
+[4895] - Worker 0 (pid: 4945) booted, phase: 0
+[4895] - Gracefully shutting down workers...
+[4895] === puma shutdown: 2017-06-01 21:10:53 +1000 ===
+[4895] - Goodbye!
+Exiting
+=== puma startup: 2017-06-01 21:11:01 +1000 ===
+[4978] * Starting control server on unix:///tmp/puma-status-1496315461973-4978
+[4978] - Worker 1 (pid: 5038) booted, phase: 0
+[4978] - Worker 0 (pid: 5034) booted, phase: 0
+[4978] - Gracefully shutting down workers...
+[4978] === puma shutdown: 2017-06-01 21:11:03 +1000 ===
+[4978] - Goodbye!
+Exiting
+=== puma startup: 2017-06-01 21:11:10 +1000 ===
+[5056] * Starting control server on unix:///tmp/puma-status-1496315470710-5056
+[5056] - Worker 0 (pid: 5105) booted, phase: 0
+[5056] - Worker 1 (pid: 5109) booted, phase: 0
+[5056] - Gracefully shutting down workers...
+[5056] === puma shutdown: 2017-06-01 21:12:02 +1000 ===
+[5056] - Goodbye!
+Exiting
+=== puma startup: 2017-06-01 21:24:20 +1000 ===
+[4097] * Starting control server on unix:///tmp/puma-status-1496316260432-4097
+[4097] - Worker 0 (pid: 4147) booted, phase: 0
+[4097] - Worker 3 (pid: 4159) booted, phase: 0
+[4097] - Worker 1 (pid: 4151) booted, phase: 0
+[4097] - Worker 2 (pid: 4155) booted, phase: 0
+[4097] - Gracefully shutting down workers...
+[4097] === puma shutdown: 2017-06-01 21:28:30 +1000 ===
+[4097] - Goodbye!
+Exiting
