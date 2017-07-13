@@ -1,3 +1,4 @@
+
 min_threads = Integer(ENV['PUMA_MIN_THREADS'] || 0)
 max_threads = Integer(ENV['PUMA_MAX_THREADS'] || 3)
 

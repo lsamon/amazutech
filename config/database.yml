@@ -19,11 +19,13 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-
+  pool: 10
+  timeout: 5000
 development:
   <<: *default
   database: amazutech_development
+  pool: 10
+  timeout: 5000
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -81,5 +83,7 @@ test:
 production:
   <<: *default
   database: amazutech_production
-  username: amazutech
+  pool: <%= ENV['RAILS_MAX_THREADS'] || 10 %>
+  timeout: 5000
+  username: <%= ENV['AMAZUTECH_APP_USER'] %>
   password: <%= ENV['AMAZUTECH_DATABASE_PASSWORD'] %>
