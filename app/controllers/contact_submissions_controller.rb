@@ -9,9 +9,10 @@ class ContactSubmissionsController < ApplicationController
         if ContactMailer.form_enquiry(@contact_submission).deliver_later
           flash.now[:error] = nil
           flash.now[:notice] = 'Thank you for your message!'
+          redirect_to root_path
         else
           flash.now[:error] = 'Cannot send message.'
-          render :new
+          redirect_to root_path
         end
       else
         redirect_to root_path
