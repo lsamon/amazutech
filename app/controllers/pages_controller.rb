@@ -1,4 +1,14 @@
 class PagesController < ApplicationController
+  before_action :initialize_contact_submission, only: [:index]
   def index
+  end
+
+  private
+  def contact_submission_params
+    params.fetch(:contact_submission, {}).permit(:name, :email, :subject, :message)
+  end
+
+  def initialize_contact_submission
+    @contact_submission = ContactSubmission.new(contact_submission_params)
   end
 end

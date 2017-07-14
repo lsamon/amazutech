@@ -1,0 +1,10 @@
+<h1>Dear Admin,</h1>
+<p>You have received an enquiry from <%= @contact.name if @contact.name? %> <%= @contact.email %>.</p>
+<p>The details are as below:</p>
+<div>
+  <p><%= simple_format @contact.message %></p>
+</div>
+
+<p>
+  Kind Regards,
+</p>
