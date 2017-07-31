@@ -27,6 +27,7 @@ Rails.application.configure do
   config.action_controller.perform_caching = true
 
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  byebug
 
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger = ActiveSupport::Logger.new(STDOUT)
