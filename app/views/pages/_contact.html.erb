@@ -10,7 +10,10 @@
         </div>
         <div class="row content-row">
             <div class="col-lg-8 col-lg-offset-2">
-              <%= simple_form_for @contact_submission do |f| %>
+              <div id="submission-success" style="display:none;">
+                <h3>Thank you for contacting us. We will respond to you shortly.</h3>
+              </div>
+              <%= simple_form_for @contact_submission, url: {controller: 'pages', action: 'submit_form'}, :html => { :multipart => true, id: 'contact-form' }, remote: true do |f| %>
                 <div class="row control-group">
                   <div class="form-group col-xs-12 floating-label-form-group controls">
                     <%= f.input :name, input_html: { placeholder: 'Name' } %>
@@ -30,7 +33,7 @@
                 <div id="success"></div>
                 <div class="row">
                   <div class="form-group col-xs-12">
-                    <%= f.submit 'Send', class: 'btn btn-outline-dark' %>
+                    <%= f.submit 'Send', class: 'btn btn-outline-dark', data: { "disable-with": "Sending..." } %>
                   </div>
                 </div>
               <% end %>

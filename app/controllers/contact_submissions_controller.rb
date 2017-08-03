@@ -1,27 +1,24 @@
 class ContactSubmissionsController < ApplicationController
-  def new
-      @contact_submission = ContactSubmission.new
-    end
+  before_action :initialize_contact_submission
 
-    def create
-      @contact_submission = ContactSubmission.new(contact_submission_params)
+  def create
+    @contact_submission.contact_ip_address = request.remote_ip
+    respond_to do |format|
       if @contact_submission.save
-        if ContactMailer.form_enquiry(@contact_submission).deliver_later
-          flash.now[:error] = nil
-          flash.now[:notice] = 'Thank you for your message!'
-          redirect_to root_path
-        else
-          flash.now[:error] = 'Cannot send message.'
-          redirect_to root_path
-        end
+        format.js
       else
-        redirect_to root_path
+        format.html { redirect_to root_path }
       end
     end
+  end
 
   private
   def contact_submission_params
     params.fetch(:contact_submission, {}).permit(:name, :email, :subject, :message)
+  end
+
+  def initialize_contact_submission
+    @contact_submission = ContactSubmission.new(contact_submission_params)
   end
 
 end

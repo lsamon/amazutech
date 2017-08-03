@@ -1,7 +1,21 @@
 class PagesController < ApplicationController
-  before_action :initialize_contact_submission, only: [:index]
+  protect_from_forgery with: :null_session, if: Proc.new { |c| c.request.format == 'application/js' }
+  before_action :initialize_contact_submission, only: [:index, :submit_form]
+
   def index
   end
+
+  def submit_form
+    respond_to do |format|
+      if @contact_submission.save
+        format.js   { }
+        format.json { render :index, status: :created, location: @contact_submission }
+      else
+        render :index
+      end
+    end
+  end
+
 
   private
   def contact_submission_params

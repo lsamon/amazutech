@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   mount Sidekiq::Web => '/sidekiq'
   root to: "pages#index"
   resources :contact_submissions, only: [:new, :create]
+
+  post '/', to: 'pages#submit_form', as: 'form_submission', defaults: { format: 'js' }
 end
