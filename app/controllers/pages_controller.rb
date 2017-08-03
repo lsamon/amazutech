@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def submit_form
+    @contact_submission.contact_ip_address = request.remote_ip
     respond_to do |format|
       if @contact_submission.save
         format.js   { }

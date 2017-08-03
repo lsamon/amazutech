@@ -2,7 +2,6 @@ class ContactSubmissionsController < ApplicationController
   before_action :initialize_contact_submission
 
   def create
-    @contact_submission.contact_ip_address = request.remote_ip
     respond_to do |format|
       if @contact_submission.save
         format.js
