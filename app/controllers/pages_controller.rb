@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   before_action :initialize_contact_submission, only: [:index, :submit_form]
 
   def index
+    @latest_submission = ContactSubmission.by_ip(request.remote_ip)
   end
 
   def submit_form
