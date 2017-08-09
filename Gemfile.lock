@@ -86,6 +86,8 @@ GEM
       mime-types (>= 1.16, < 4)
     mailgun-ruby (1.1.6)
       rest-client (~> 2.0)
+    meta-tags (2.4.1)
+      actionpack (>= 3.2.0, < 5.2)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -215,6 +217,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   magnific-popup-rails
   mailgun-ruby
+  meta-tags
   pg (~> 0.20.0)
   pry
   puma (~> 3.0)

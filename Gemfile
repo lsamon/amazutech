@@ -25,6 +25,9 @@ gem 'jquery-rails'
 
 gem 'figaro'
 
+# SEO
+gem 'meta-tags'
+
 # Sidekiq for delayed jobs
 gem 'sidekiq'
 gem 'redis'
