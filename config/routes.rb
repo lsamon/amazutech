@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   root to: "pages#index"
   # resources :contact_submissions, only: [:new, :create]
 
-  post '/', to: 'contact_submissions#create', as: 'form_submission', defaults: { format: 'js' }
+  post '/', to: 'pages#submit_form', as: 'form_submission'
 end

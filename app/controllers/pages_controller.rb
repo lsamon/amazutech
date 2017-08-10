@@ -10,8 +10,12 @@ class PagesController < ApplicationController
     @contact_submission.contact_ip_address = request.remote_ip
     respond_to do |format|
       if @contact_submission.save
-        format.js   { }
-        format.json { render :index, status: :created, location: @contact_submission }
+        if ContactMailer.form_enquiry(@contact_submission).deliver_later
+          format.js
+          format.json { render :index, status: :created, location: @contact_submission }
+        else
+          render :index
+        end
       else
         render :index
       end
