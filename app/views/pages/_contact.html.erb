@@ -10,10 +10,10 @@
         </div>
         <div class="row content-row">
             <div class="col-lg-8 col-lg-offset-2">
-                <div id="submission-success" style="<%= 'display:none;' if @latest_submission.nil? || @latest_submission.present? && to_minutes(Time.current - @latest_submission.created_at) > 30 %>">
+                <div id="submission-success" style="<%= 'display:none;' if @latest_submission.nil? || (@latest_submission.present? && to_minutes(Time.current - @latest_submission.created_at) > 30) %>">
                   <h3>Thank you for contacting us. We will respond to you shortly.</h3>
                 </div>
-              <% if @latest_submission.nil? || @latest_submission.present? && to_minutes(Time.current - @latest_submission.created_at) > 30 %>
+              <% if @latest_submission.nil? || (@latest_submission.present? && to_minutes(Time.current - @latest_submission.created_at) > 30) %>
                 <%= simple_form_for @contact_submission, url: {controller: 'pages', action: 'submit_form'}, :html => { :multipart => true, id: 'contact-form' }, remote: true do |f| %>
                   <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
