@@ -22,11 +22,11 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 
 gem 'jquery-rails'
-
 gem 'figaro'
 
 # SEO
 gem 'meta-tags'
+gem 'sitemap_generator'
 
 # Sidekiq for delayed jobs
 gem 'sidekiq'
