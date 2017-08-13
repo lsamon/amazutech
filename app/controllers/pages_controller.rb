@@ -11,9 +11,9 @@ class PagesController < ApplicationController
     respond_to do |format|
       if @contact_submission.save
         if ContactMailer.form_enquiry(@contact_submission).deliver_later
-          format.html { redirect_to root_path }
-          format.js
-          format.json
+          format.html { redirect_to root_path, notice: 'Message sent successfully!' }
+          format.js   { }
+          format.json { render :show, status: :created, location: @contact_submission }
         else
           redirect_to root_path, notice: 'Cannot send email'
         end
