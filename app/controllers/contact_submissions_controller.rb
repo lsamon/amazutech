@@ -9,10 +9,10 @@ class ContactSubmissionsController < ApplicationController
           format.js
           format.json { render :index, status: :created, location: @contact_submission }
         else
-          render :index
+          redirect_to root_path, notice: 'Cannot send email'
         end
       else
-        render :index
+        redirect_to root_path, notice: 'Cannot save contact message'
       end
     end
   end
