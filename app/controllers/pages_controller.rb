@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_action :initialize_contact_submission, only: [:index]
 
   def index

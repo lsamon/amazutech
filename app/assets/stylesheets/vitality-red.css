@@ -230,8 +230,8 @@ hr.colored {
 }
 .navbar-default .navbar-brand img,
 .navbar-inverse .navbar-brand img {
-  margin-top: -90px;
-  height: 200px;
+  margin-top: -15px;
+  height: 100%;
 }
 .navbar-default .navbar-nav > li > a,
 .navbar-inverse .navbar-nav > li > a {
@@ -265,12 +265,22 @@ hr.colored {
   .navbar-default.navbar-expanded,
   .navbar-inverse.navbar-expanded {
     background: transparent;
+    height: 125px;
     border: none;
   }
+}
+
+.navbar-header {
+  height: 65px
 }
 .navbar a:focus {
   outline: none;
 }
+
+.navbar a.navbar-brand {
+  height: 75px;
+}
+
 .navbar .navbar-nav li a:focus {
   outline: none;
 }
