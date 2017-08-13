@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   mount Sidekiq::Web => '/sidekiq'
   root to: "pages#index"
-  resources :contact_submissions, only: [:new, :create], defaults: { format: 'js' }
+  resources :contact_submissions, only: [:create], defaults: { format: 'js' }
 end
