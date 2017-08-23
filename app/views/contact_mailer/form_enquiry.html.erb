@@ -2,6 +2,7 @@
 <p>You have received an enquiry from <%= @contact.name? ? @contact.name : @contact.email %>.</p>
 <p>The details are as below:</p>
 <div>
+  <p>Email: <%= @contact.email %></p>
   <p>Subject: <%= @contact.subject %></p>
   <p>Message: <br>
     <%= simple_format @contact.message %>
