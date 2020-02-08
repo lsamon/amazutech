@@ -16,8 +16,14 @@
 # Ignore Byebug command history file.
 .byebug_history
 
+# Environment files
+.env
+
 # Ignore application configuration
 /config/application.yml
 
 # Ignore encrypted secrets key file.
 config/secrets.yml.key
+
+# ignore DS_Store files
+*.DS_Store

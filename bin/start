@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+printf "\n== Starting docker containers ==\n"
+docker-compose up -d
+
+printf "\n== Starting rails app ==\n"
+foreman start -f Procfile

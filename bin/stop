@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+printf "\n== Stopping docker containers ==\n"
+docker-compose down
