@@ -34,6 +34,9 @@ config/secrets.yml.key
 /public/packs-test
 /node_modules
 /yarn-error.log
-postgres
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore docker folders
+/redis
+/postgres
