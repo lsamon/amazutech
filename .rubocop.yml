@@ -1,0 +1,193 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+AllCops:
+  NewCops: enable
+  Include:
+    - "**/Gemfile"
+    - "**/Rakefile"
+    - "app/mailers/**/*"
+    - "app/controllers/**/*"
+    - "app/jobs/**/*"
+    - "app/models/**/*"
+    - "config/initializers/*"
+  Exclude:
+    - "bin/*"
+    - "config/**/*"
+    - "db/**/*"
+    - "spec/fixtures/**/*"
+    - "tmp/**/*"
+    - "node_modules/**/*"
+    - "vendor/**/*"
+    - "bin/**/*"
+    - "log/**/*"
+    - "**/.DS_Store"
+  TargetRubyVersion: 2.7
+
+Layout/MultilineMethodCallBraceLayout:
+  Enabled: false
+
+Metrics/BlockLength:
+  ExcludedMethods:
+    - configure
+    - context
+    - define
+    - describe
+    - draw
+    - factory
+    - searchable
+  Exclude:
+    - "spec/**/*"
+
+Style/ClassVars:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/EmptyMethod:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - "spec/**/*"
+
+Style/BlockComments:
+  Exclude:
+    - "spec/spec_helper"
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/AbcSize:
+  Max: 22
+  Exclude:
+    - "spec/system/**/*"
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+  SupportedStyles:
+    - leading
+    - trailing
+
+Layout/MultilineMethodCallIndentation:
+  # This setting allows us to use the following style
+  # @foo ||= begin
+  #   Foo.
+  #     bar
+  #  end
+  EnforcedStyle: indented
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: true
+
+Style/GuardClause:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/ParameterAlignment:
+  Enabled: false
+
+# Due to max 80 char width, the number of lines needs to be increased
+Metrics/ModuleLength:
+  Max: 150
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+# Following this advice can lead to hard to diagnose problems
+# with activerecord callbacks
+Style/SymbolProc:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 100
+  Exclude:
+    - "spec/**/*"
+
+Lint/UselessAssignment:
+  Exclude:
+    - "spec/**/*"
+
+Metrics/ClassLength:
+  Max: 150
+
+# Using PerceivedComplexity instead
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Max: 8
+
+Style/ParenthesesAroundCondition:
+  Enabled: false
+
+Style/NumericLiterals:
+  Enabled: false
+
+Naming/MethodParameterName:
+  AllowedNames:
+    - q
+    - a
+    - b
+    - id
+    - io
+    - by
+    - to
+
+Layout/HashAlignment:
+  Enabled: false
+
+Style/NumericPredicate:
+  Enabled: false
+
+Lint/EmptyWhen:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Style/AccessModifierDeclarations:
+  Enabled: false
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashAsLastArrayItem:
+  Enabled: false
+
+Rails/RequestReferer:
+  EnforcedStyle: referrer
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - staging
+    - development
+    - test
+
+Rails/ApplicationMailer:
+  Enabled: false
