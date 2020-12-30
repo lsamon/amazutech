@@ -1,34 +1,26 @@
 <!-- Footer -->
 <footer class="footer" style="background-image: url(<%= image_path("bg-footer.jpg") %>);">
-    <div class="container text-center">
-        <div class="row">
-            <!-- <div class="col-md-4 contact-details">
-                <h4><i class="fa fa-phone"></i> Call</h4>
-                <p>555-213-4567</p>
-            </div> -->
-            <div class="col-md-4 contact-details">
-                <h4><i class="fa fa-map-marker"></i> Visit</h4>
-                <p>11/4-8 Bobbin Head Road,
-                    <br>Pymble, NSW 2073, Australia</p>
-            </div>
-            <div class="col-md-4 contact-details">
-                <h4><i class="fa fa-envelope"></i> Email</h4>
-                <p><a href="mailto:info@amazutech.net">info@amazutech.net</a>
-                </p>
-            </div>
-        </div>
-        <div class="row social">
-            <div class="col-lg-12">
-                <ul class="list-inline">
-                    <li><a href="#"><i class="fa fa-facebook fa-fw fa-2x"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row copyright">
-            <div class="col-lg-12">
-                <p class="small">&copy; 2017 Amazutech</p>
-            </div>
-        </div>
+  <div class="contact-information">
+    <div class="address-details">
+      <h4><i class="fa fa-map-marker"></i> Visit</h4>
+      <p>
+          11/4-8 Bobbin Head Road,
+          <br>Pymble, NSW 2073, Australia
+      </p>
     </div>
+    <div class="contact-details">
+        <h4><i class="fa fa-envelope"></i> Email</h4>
+        <p><a href="mailto:info@amazutech.net">info@amazutech.net</a>
+        </p>
+    </div>
+  </div>
+  <div class="social-links">
+    <ul class="list-inline">
+      <li><a href="#"><i class="fab fa-facebook-f fa-fw fa-2x"></i></a>
+      </li>
+    </ul>
+  </div>
+  <div class="copyright">
+    <p class="small">&copy; <%= Date.today.year %> Amazutech</p>
+  </div>
 </footer>

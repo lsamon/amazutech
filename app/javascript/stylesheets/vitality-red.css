@@ -1085,11 +1085,6 @@ footer.footer a:hover {
 footer.footer p {
   font-size: 22px;
 }
-footer.footer .contact-information {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 footer.footer .contact-details {
   margin: 75px 0;
 }
@@ -1212,20 +1207,4 @@ body.vintage .testimonials .owl-controls .owl-prev,
 body.vintage .about-carousel .owl-controls .owl-next,
 body.vintage .testimonials .owl-controls .owl-next {
   line-height: 55px !important;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

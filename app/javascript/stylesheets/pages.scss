@@ -1,0 +1,30 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.brand-name {
+  color: #000;
+}
+.brand-name-subtext {
+  color: #000;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ccc;
+
+  .services-section {
+    max-width: 960px;
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.footer {
+  background: #222;
+}
