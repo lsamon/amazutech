@@ -5,8 +5,46 @@
 .brand-name {
   color: #000;
 }
+
 .brand-name-subtext {
   color: #000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+
+  .container {
+    width: 100%;
+    max-width: 1170px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline;
+
+        .a {
+          position: relative;
+          display: block;
+          padding: 10px 15px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.grid-text {
+  margin-top: 20px;
 }
 
 .services {
@@ -21,6 +59,27 @@
     .services-grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .about-wrapper {
+    max-width: 1800px;
+
+    .about-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      .about-content {
+        .grid-body {
+          margin-top: 15px;
+        }
+      }
     }
   }
 }
