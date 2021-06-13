@@ -1,17 +1,10 @@
 # frozen_string_literal: true
 
-# PagesController
-class PagesController < ApplicationController
-  skip_before_action :verify_authenticity_token
-  before_action :init_contact_response, only: %i[index submit_form]
-
-  def index
-    @latest_response = ContactResponse.by_ip_address(request.remote_ip)
-  end
-
-  def submit_form
+# ContactResponsesController
+class ContactResponsesController < ApplicationController
+  def create
     captcha_validated, captcha_response = verify_hcaptcha
-    @contact_response.contact_ip_address = request.remote_ip
+    @contact_response = ContactResponse.new(contact_response_params)
 
     if captcha_validated || Rails.env.development?
       if @contact_response.save
@@ -33,9 +26,5 @@ class PagesController < ApplicationController
     params
       .fetch(:contact_response, {})
       .permit(:name, :email, :subject, :message, :ip_address)
-  end
-
-  def init_contact_response
-    @contact_response = ContactResponse.new(contact_response_params)
   end
 end

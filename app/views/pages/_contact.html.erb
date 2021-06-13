@@ -10,11 +10,11 @@
         </div>
         <div class="row content-row">
             <div class="col-lg-8 col-lg-offset-2">
-                <div id="submission-success" style="<%= 'display:none;' if @latest_submission.nil? || @latest_submission.present? && to_minutes(Time.current - @latest_submission.created_at) > 30 %>">
+                <div id="submission-success" style="<%= 'display:none;' if @latest_response.nil? || @latest_response.present? && to_minutes(Time.current - @latest_response.created_at) > 30 %>">
                   <h3>Thank you for contacting us. We will respond to you shortly.</h3>
                 </div>
-              <% if @latest_submission.nil? || @latest_submission.present? && to_minutes(Time.current - @latest_submission.created_at) > 30 %>
-                <%= simple_form_for @contact_submission, url: submit_form_path, :html => { :multipart => true, id: 'contact-form' }, remote: true, authenticity_token: true do |f| %>
+              <% if @latest_response.nil? || @latest_response.present? && to_minutes(Time.current - @latest_response.created_at) > 30 %>
+                <%= simple_form_for @contact_response, url: submit_form_path, :html => { :multipart => true, id: 'contact-form' }, authenticity_token: true do |f| %>
                   <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                       <%= f.input :name, input_html: { placeholder: 'Name' } %>
@@ -35,7 +35,6 @@
                       <%= f.input :message, input_html: { placeholder: 'Message' } %>
                     </div>
                   </div>
-                  <%= f.input :comment, as: :text, input_html: { style: "width: 0px; height: 0px; overflow: hidden; padding: 0px; margin: 0px"}, label: false %>
                   <br>
                   <div id="success"></div>
                   <div class="row">

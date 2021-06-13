@@ -22,7 +22,9 @@
     <%= javascript_include_tag "https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag 'favicon.png' %>
-    <%= hcaptcha_tag, size: invisible %>
+    <% if Rails.env.production? %>
+      <%= hcaptcha_tag %>
+    <% end %>
     <%= csrf_meta_tags %>
   </head>
 

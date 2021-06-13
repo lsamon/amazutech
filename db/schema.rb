@@ -10,19 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170803094605) do
+ActiveRecord::Schema.define(version: 20170714013216) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "contact_submissions", id: :serial, force: :cascade do |t|
+  create_table "contact_responses", id: :serial, force: :cascade do |t|
     t.string "name"
-    t.string "email"
-    t.string "subject"
-    t.text "message"
+    t.string "email", null: false
+    t.string "subject", null: false
+    t.text "message", null: false
+    t.string "ip_address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "contact_ip_address"
   end
 
 end
