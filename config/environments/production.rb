@@ -9,10 +9,13 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   config.active_job.queue_name_prefix = "amazutech"
   config.active_job.queue_name_delimiter = "_"
-  config.action_mailer.delivery_method = :mailgun
-  config.action_mailer.mailgun_settings = {
-      api_key: ENV['MAILGUN_API_KEY'],
-      domain: ENV['MAILGUN_DOMAIN']
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "amazutech.net" }
+
+  # SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+    address: "10.10.10.19",
+    port: 25
   }
 
   # Code is not reloaded between requests.
