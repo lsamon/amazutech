@@ -15,5 +15,5 @@ test:
   database: amazutech_test
 
 production:
-  url:  <%= ENV['DATABASE_URL'] %>
-  pool: <%= ENV['DATABASE_POOL'] || 5 %>
+  <<: *default
+  database: amazutech_production
