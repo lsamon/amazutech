@@ -10,11 +10,10 @@ class PagesController < ApplicationController
   end
 
   def submit_form
-    captcha_validated, captcha_response = verify_hcaptcha
     @contact_response.contact_ip_address = request.remote_ip
 
     if captcha_validated || Rails.env.development?
-      if @contact_response.save
+      if verify_hcaptcha(model: @contact_response) && @contact_response.save
         ContactMailer.form_enquiry(@contact_response).deliver_later
         flash[:notice] = "Message sent successfully!"
       else

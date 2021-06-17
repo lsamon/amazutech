@@ -35,6 +35,11 @@
                       <%= f.input :message, input_html: { placeholder: 'Message' } %>
                     </div>
                   </div>
+                  <% if Rails.env.production? %>
+                    <div class="row control-group">
+                      <%= hcaptcha_tags size: :invisible %>
+                    </div>
+                  <% end %>
                   <br>
                   <div id="success"></div>
                   <div class="row">

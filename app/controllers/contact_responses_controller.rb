@@ -3,11 +3,10 @@
 # ContactResponsesController
 class ContactResponsesController < ApplicationController
   def create
-    captcha_validated, captcha_response = verify_hcaptcha
     @contact_response = ContactResponse.new(contact_response_params)
 
     if captcha_validated || Rails.env.development?
-      if @contact_response.save
+      if verify_hcaptcha(model: @contact_response) && @contact_response.save
         ContactMailer.form_enquiry(@contact_response).deliver_later
         flash[:notice] = "Message sent successfully!"
       else
