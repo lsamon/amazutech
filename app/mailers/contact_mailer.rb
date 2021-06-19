@@ -3,6 +3,6 @@ class ContactMailer < ApplicationMailer
     @contact = contact
     attachments.inline['logo_thumbnail.png'] = File.read('app/assets/images/logo_thumbnail.png')
     @email_subject = "Webform Enquiry"
-    mail(to: 'loui.amon@gmail.com', subject: @email_subject)
+    mail(to: 'info@amazutech.net', subject: @email_subject)
   end
 end

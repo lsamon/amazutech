@@ -10,18 +10,17 @@ class PagesController < ApplicationController
   end
 
   def submit_form
-    @contact_response.contact_ip_address = request.remote_ip
+    @contact_response.ip_address = request.remote_ip
 
-    if captcha_validated || Rails.env.development?
-      if verify_hcaptcha(model: @contact_response) && @contact_response.save
-        ContactMailer.form_enquiry(@contact_response).deliver_later
-        flash[:notice] = "Message sent successfully!"
-      else
-        flash[:error] = "Cannot save contact message"
-      end
-    else
-      flash[:error] = captcha_response[:error_codes]
+    if Rails.env.development? && @contact_response.save
+      return send_email_redirect
     end
+
+    if verify_hcaptcha(model: @contact_response) && @contact_response.save
+      return send_email_redirect
+    end
+
+    flash[:alert] = "Could not send message at this time. please try again later"
 
     redirect_to root_path
   end
@@ -31,10 +30,16 @@ class PagesController < ApplicationController
   def contact_response_params
     params
       .fetch(:contact_response, {})
-      .permit(:name, :email, :subject, :message, :ip_address)
+      .permit(:name, :email, :subject, :message)
   end
 
   def init_contact_response
     @contact_response = ContactResponse.new(contact_response_params)
+  end
+
+  def send_email_redirect
+    ContactMailer.form_enquiry(@contact_response).deliver_now
+    flash[:notice] = "Message sent successfully!"
+    redirect_to root_path
   end
 end
