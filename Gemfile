@@ -53,13 +53,16 @@ gem 'simple_form'
 gem 'lograge'
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platform: :mri
   gem 'better_errors'
-  gem 'pry'
+  gem 'pry-rails'
 end
 
 group :development do
+  gem 'capistrano', '~> 3.11.2', require: false
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-puma'
+
   gem 'letter_opener'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
